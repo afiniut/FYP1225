@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Hall Image Placeholder -->
+        <ImageView
+            android:id="@+id/ivHallImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/ic_hall_placeholder"
+            android:visibility="gone"/>  <!-- Hidden until we add actual images -->
+
+        <!-- Hall Name -->
+        <TextView
+            android:id="@+id/tvHallName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hall Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Hall Location -->
+        <TextView
+            android:id="@+id/tvHallLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Hall Capacity and Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvHallCapacity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Capacity: 100"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvHallPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹500/hr"
+                android:textSize="14sp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/design_default_color_primary"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Hall Description -->
+        <TextView
+            android:id="@+id/tvHallDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

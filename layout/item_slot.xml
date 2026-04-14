@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:drawable/list_selector_background"
+    android:layout_margin="4dp"
+    android:elevation="2dp"
+    android:backgroundTint="@android:color/white">
+
+    <!-- Hall Name -->
+    <TextView
+        android:id="@+id/slotHallNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/slotDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/slotTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Status (Available/Booked) -->
+    <TextView
+        android:id="@+id/slotStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>
